@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Restaurant</title>
+    <title>My Cool Restaurant</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Verdana', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f2f2f2;
         }
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 20px 0;
         }
         nav {
-            background-color: #444;
+            background-color: #333;
             overflow: hidden;
         }
         nav a {
@@ -28,23 +28,82 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
             background-color: #555;
         }
         .banner {
-            background-color: #666;
+            background-color: #87CEEB;
             color: white;
-            padding: 50px 0;
+            padding: 60px 20px;
             text-align: center;
+            background-image: url('Images/Background.jpg');
+            background-size: cover;
+            background-position: center;
         }
         .content {
             padding: 20px;
+            text-align: center;
         }
         .menu {
-            padding: 10px;
-            background-color: #e4e4e4;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+        }
+        .menu h3 {
+            color: #4CAF50;
         }
         .footer {
             background-color: #333;
-            color:
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Cool Restaurant</h1>
+</header>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+<div class="banner" id="home">
+    <h2>Welcome to My Cool Restaurant</h2>
+    <p>Where taste meets comfort!</p>
+</div>
+<div class="content" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu">
+        <h3>Appetizers</h3>
+        <p>Tasty starters to get you going.</p>
+        <h3>Main Courses</h3>
+        <p>Delicious dishes to satisfy your hunger.</p>
+        <h3>Desserts</h3>
+        <p>Sweet treats to finish your meal right.</p>
+    </div>
+</div>
+<div class="content" id="about">
+    <h2>About Us</h2>
+    <p>We're passionate about food and dedicated to giving you the best experience possible.</p>
+</div>
+<div class="content" id="contact">
+    <h2>Contact Us</h2>
+    <p>Reach out for reservations or any questions!</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Email: info@mycoolrestaurant.com</p>
+    <p>Address: 123 Tasty Avenue, Foodie Town, USA</p>
+</div>
+<footer class="footer">
+    <p>&copy; 2024 My Cool Restaurant. All rights reserved.</p>
+</footer>
+</body>
+</html>
