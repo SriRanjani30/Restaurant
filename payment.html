@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - My Cool Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Payment - My Cool Restaurant</h1>
+</header>
+
+<div class="container">
+    <h2>Complete Your Payment</h2>
+    <form action="confirmation.html">
+        <label for="card-name">Cardholder's Name</label>
+        <input type="text" id="card-name" name="card-name" placeholder="Enter your name" required>
+        
+        <label for="card-number">Card Number</label>
+        <input type="number" id="card-number" name="card-number" placeholder="Enter your card number" required>
+        
+        <label for="expiry-date">Expiry Date</label>
+        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+        
+        <label for="cvv">CVV</label>
+        <input type="number" id="cvv" name="cvv" placeholder="Enter CVV" required>
+        
+        <button type="submit">Pay Now</button>
+    </form>
+</div>
+
+</body>
+</html>
